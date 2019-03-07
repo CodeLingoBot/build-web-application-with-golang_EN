@@ -10,7 +10,7 @@ type person struct {
 	age  int
 }
 
-// compare age of two people, return the older person and differences of age
+// Older compares age of two people, return the older person and differences of age
 // struct is passed by value
 func Older(p1, p2 person) (person, int) {
 	if p1.age > p2.age {

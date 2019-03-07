@@ -18,7 +18,7 @@ type Errors struct {
 	Errors []error
 }
 
-// Goes through the form object and validates each element.
+// GetErrors: Goes through the form object and validates each element.
 // Attachs an error to the output if validation fails.
 func (p *ProfilePage) GetErrors() Errors {
 	errs := make([]error, 0, 10)

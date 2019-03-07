@@ -4,7 +4,7 @@ package main
 
 import "fmt"
 
-// return results of A + B and A * B
+// SumAndProduct returns results of A + B and A * B
 func SumAndProduct(A, B int) (int, int) {
 	return A + B, A * B
 }

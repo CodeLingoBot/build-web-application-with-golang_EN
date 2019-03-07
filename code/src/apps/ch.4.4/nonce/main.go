@@ -29,7 +29,7 @@ func (n *Nonces) NewNonce() Nonce {
 	return Nonce{n.NewToken()}
 }
 
-// Returns a new unique token
+// NewToken returns a new unique token
 func (n *Nonces) NewToken() string {
 	t := createToken()
 	for n.HasToken(t) {
@@ -38,7 +38,7 @@ func (n *Nonces) NewToken() string {
 	return t
 }
 
-// Checks if token has been marked.
+// HasToken checks if token has been marked.
 func (n *Nonces) HasToken(token string) bool {
 	return n.hashs[token] == true
 }

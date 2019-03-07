@@ -140,7 +140,7 @@ func show_iota() {
 	fmt.Printf("e = %v, f = %v, g = %v\n", e, f, g)
 }
 
-// Functions and variables starting with a capital letter are public to other packages.
+// This_is_public: Functions and variables starting with a capital letter are public to other packages.
 // Everything else is private.
 func This_is_public()  {}
 func this_is_private() {}
